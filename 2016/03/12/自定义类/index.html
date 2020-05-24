@@ -139,7 +139,7 @@
 <meta property="og:site_name" content="Kevin">
 <meta property="og:description" content="默认构造函数 如果我们没有显式的定义构造函数，那么编译器将会创建一个默认的构造函数；一旦我们定义了任何构造函数，那么除非我们再定义一个默认构造函数，否则该类讲没有默认构造函数;  默认构造函数与自定义的构造函数似乎没有什么不同，但是实际上还是存在区别，例如类中包含有数组和指针，默认构造函数将会导致野指针等类似问题，此时需要自定义默认构造函数再内部控制对象初始化；这种情况同样可以扩大到类中，如果该类">
 <meta property="article:published_time" content="2016-03-11T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-05-23T13:18:33.889Z">
+<meta property="article:modified_time" content="2020-05-24T12:10:20.061Z">
 <meta property="article:author" content="Kevin">
 <meta property="article:tag" content="c++">
 <meta name="twitter:card" content="summary">
@@ -193,6 +193,16 @@
   ga('send', 'pageview');
 </script>
 
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?78060a28557cfe648ac1b366a8af46d7";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -369,8 +379,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-05-23T21:18:33+08:00">
-                2020-05-23
+              <time title="更新于" itemprop="dateModified" datetime="2020-05-24T20:10:20+08:00">
+                2020-05-24
               </time>
             
           </span>
@@ -401,6 +411,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/03/12/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/03/12/自定义类/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -430,7 +451,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  
+                  1.1k
                 </span>
               
 
@@ -446,7 +467,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  
+                  3
                 </span>
               
             </div>
@@ -486,7 +507,12 @@
 <li>为什么在可以使用类成员函数进行运算符重载的情况下，还要使用友元函数进行运算符重载，这是因为可能存在下列情况：A = B*2.75; 那么这个对应的是A = B.operaotr<em>(2.75); 那么反过来呢？A=2.75*B；由于2.75并非对象，那么这种情况就无法成立，在此基础上，所以需要使用友元函数进行运算符重载；针对A=2.75*B就可以和class1 operator\</em>(double m，const class1 &amp;t)进行匹配；对于非成员重载运算符函数来说，运算符表达式左边的操作数对应于运算符函数的第一个参数，运算符表达式右边的操作数对应于运算符函数的第二个参数。  </li>
 <li>友元函数需要注意他的作用域；如果一个友元函数在类中声明，在类外定义，那么这种情况是没有问题的；但是如果一个友元函数在类中定义呢？那么此时友元函数变成了一个内联函数，但是需要注意的是，由于此时其在外部未被声明，那么无论在类内部还是外部都不能被调用；</li>
 </ul>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">X</span>&#123;</span></span><br><span class="line">  <span class="function"><span class="keyword">friend</span> <span class="keyword">void</span> <span class="title">f</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">  X(f(); ) <span class="comment">//错误：f还没有被声明</span></span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">g</span><span class="params">()</span></span>; </span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">h</span><span class="params">()</span></span>; </span><br><span class="line">&#125;; </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">X::g</span><span class="params">()</span></span>&#123;<span class="keyword">return</span> f(); &#125; <span class="comment">//错误：f还没有被声明</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">()</span></span>; </span><br><span class="line"><span class="keyword">void</span> X:h()&#123;<span class="keyword">return</span> f(); &#125; <span class="comment">//正确，f已经被声明了</span></span><br><span class="line"></span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">## 友元类</span><br><span class="line"></span><br><span class="line">* 友元类可以类比友元函数，一个类的友元类可以访问此类中包括非公有成员在内的所有成员；</span><br><span class="line"></span><br><span class="line">```c++</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Screen</span>&#123;</span></span><br><span class="line">    <span class="keyword">friend</span> <span class="class"><span class="keyword">class</span> <span class="title">Window_mgr</span>;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">X</span>&#123;</span></span><br><span class="line">  <span class="function"><span class="keyword">friend</span> <span class="keyword">void</span> <span class="title">f</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">  X(f(); ) <span class="comment">//错误：f还没有被声明</span></span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">g</span><span class="params">()</span></span>; </span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">h</span><span class="params">()</span></span>; </span><br><span class="line">&#125;; </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">X::g</span><span class="params">()</span></span>&#123;<span class="keyword">return</span> f(); &#125; <span class="comment">//错误：f还没有被声明</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">()</span></span>; </span><br><span class="line"><span class="keyword">void</span> X:h()&#123;<span class="keyword">return</span> f(); &#125; <span class="comment">//正确，f已经被声明了</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="友元类"><a href="#友元类" class="headerlink" title="友元类"></a>友元类</h2><ul>
+<li>友元类可以类比友元函数，一个类的友元类可以访问此类中包括非公有成员在内的所有成员；</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Screen</span>&#123;</span></span><br><span class="line">    <span class="keyword">friend</span> <span class="class"><span class="keyword">class</span> <span class="title">Window_mgr</span>;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><a href = "https://github.com/KevinSCoder/study/blob/master/C%2B%2B/C%2B%2B_Code/base/src/test_7.cpp">参考代码</a></p>
 
@@ -592,6 +618,16 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
 
   
 
@@ -719,7 +755,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#默认构造函数"><span class="nav-number">1.</span> <span class="nav-text">默认构造函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#析构函数中的delete"><span class="nav-number">2.</span> <span class="nav-text">析构函数中的delete[ ]</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#赋值函数"><span class="nav-number">3.</span> <span class="nav-text">赋值函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拷贝构造函数"><span class="nav-number">4.</span> <span class="nav-text">拷贝构造函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运算符重载与友元函数"><span class="nav-number">5.</span> <span class="nav-text">运算符重载与友元函数</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#默认构造函数"><span class="nav-number">1.</span> <span class="nav-text">默认构造函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#析构函数中的delete"><span class="nav-number">2.</span> <span class="nav-text">析构函数中的delete[ ]</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#赋值函数"><span class="nav-number">3.</span> <span class="nav-text">赋值函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拷贝构造函数"><span class="nav-number">4.</span> <span class="nav-text">拷贝构造函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运算符重载与友元函数"><span class="nav-number">5.</span> <span class="nav-text">运算符重载与友元函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#友元类"><span class="nav-number">6.</span> <span class="nav-text">友元类</span></a></li></ol></div>
             
 
           </div>
@@ -753,7 +789,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count"></span>
+    <span title="Site words total count">6.4k</span>
   
 </div>
 
@@ -890,6 +926,26 @@
 
   
 
+    
+      <script id="dsq-count-scr" src="https://Kevin.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://kevincoders.github.io/2016/03/12/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB/';
+          this.page.identifier = '2016/03/12/自定义类/';
+          this.page.title = '自定义类';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://Kevin.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
 
 
 
@@ -902,10 +958,6 @@
   
 
 
-
-
-
-  
 
 
 
