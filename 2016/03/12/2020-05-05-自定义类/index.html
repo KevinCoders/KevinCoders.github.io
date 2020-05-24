@@ -121,7 +121,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="c++," />
 
 
 
@@ -132,12 +132,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="默认构造函数 如果我们没有显式的定义构造函数，那么编译器将会创建一个默认的构造函数；一旦我们定义了任何构造函数，那么除非我们再定义一个默认构造函数，否则该类讲没有默认构造函数;  默认构造函数与自定义的构造函数似乎没有什么不同，但是实际上还是存在区别，例如类中包含有数组和指针，默认构造函数将会导致野指针等类似问题，此时需要自定义默认构造函数再内部控制对象初始化；这种情况同样可以扩大到类中，如果该类">
+<meta property="og:type" content="article">
+<meta property="og:title" content="自定义类">
+<meta property="og:url" content="http://yoursite.com/2016/03/12/2020-05-05-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="默认构造函数 如果我们没有显式的定义构造函数，那么编译器将会创建一个默认的构造函数；一旦我们定义了任何构造函数，那么除非我们再定义一个默认构造函数，否则该类讲没有默认构造函数;  默认构造函数与自定义的构造函数似乎没有什么不同，但是实际上还是存在区别，例如类中包含有数组和指针，默认构造函数将会导致野指针等类似问题，此时需要自定义默认构造函数再内部控制对象初始化；这种情况同样可以扩大到类中，如果该类">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2016-03-11T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-05-23T13:18:33.889Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="c++">
 <meta name="twitter:card" content="summary">
 
 
@@ -168,13 +173,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/03/12/2020-05-05-自定义类/"/>
 
 
 
 
 
-  <title>Archive | Hexo</title>
+  <title>自定义类 | Hexo</title>
   
 
 
@@ -202,7 +207,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -306,333 +311,281 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/03/12/2020-05-05-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h2 class="post-title" itemprop="name headline">自定义类</h2>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-03-12T00:00:00+08:00">
+                2016-03-12
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2020-05-23T21:18:33+08:00">
+                2020-05-23
+              </time>
+            
+          </span>
+
           
-        
-        Um..! 8 posts in total. Keep on posting.
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/c/" itemprop="url" rel="index">
+                    <span itemprop="name">c++</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2016/03/12/2020-05-05-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB/" class="leancloud_visitors" data-flag-title="自定义类">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <h2 id="默认构造函数"><a href="#默认构造函数" class="headerlink" title="默认构造函数"></a>默认构造函数</h2><ul>
+<li>如果我们没有显式的定义构造函数，那么编译器将会创建一个默认的构造函数；一旦我们定义了任何构造函数，那么除非我们再定义一个默认构造函数，否则该类讲没有默认构造函数; </li>
+<li>默认构造函数与自定义的构造函数似乎没有什么不同，但是实际上还是存在区别，例如类中包含有数组和指针，默认构造函数将会导致野指针等类似问题，此时需要自定义默认构造函数再内部控制对象初始化；这种情况同样可以扩大到类中，如果该类包含其它类，但是其他类没有默认构造函数，为了完成其他类的初始化，那么为该类自定义默认构造函数同样必不可少；</li>
+</ul>
+<h2 id="析构函数中的delete"><a href="#析构函数中的delete" class="headerlink" title="析构函数中的delete[ ]"></a>析构函数中的delete[ ]</h2><ul>
+<li>C++中的new相当于C语言中的malloc，如果我们分配一个对象那么就用new char[], 如果要分配一组对象那么就要用new char[n]；但是需要注意的是，前者可以用delete m_data, 也可以用delete [ ]释放空间，但是后者只能用delete [ ]释放空间，如果用delete释放new [ ]分配的空间，那么将会只释放第一个，从而导致内存泄漏；基于上述原因，所以我们一律使用delete[ ]在析构函数中释放分配的空间；</li>
+</ul>
+<h2 id="赋值函数"><a href="#赋值函数" class="headerlink" title="赋值函数"></a>赋值函数</h2><ul>
+<li>赋值函数返回引用；当我们给一个值赋值时，只有返回其本身引用才有意义，否则如果返回一个新的变量，那么将会毫无意义；</li>
+<li>自我判断；赋值时无法避免把自己赋给自己，所以必须在函数内部加以判断；</li>
+<li>释放原有空间，分配新的空间 ；为什么不在原有空间上赋值，而必须销毁之前的，再创建一个新的呢？首先无法确保原有空间是否足够，其次就算足够那么我们也会浪费空间；</li>
+</ul>
+<h2 id="拷贝构造函数"><a href="#拷贝构造函数" class="headerlink" title="拷贝构造函数"></a>拷贝构造函数</h2><ul>
+<li>拷贝构造函数分浅拷贝与深拷贝：浅拷贝仅复制指向某个对象的指针，而不复制对象本身，新旧对象还是共享同一块内存，而深拷贝会另外创造一个一模一样的对象，新对象与原对象不共享内存，修改新对象不会修改原对象；如果一个类里有指针，那么则必须对该指针进行深拷贝，反之，浅拷贝即可满足条件；</li>
+</ul>
+<h2 id="运算符重载与友元函数"><a href="#运算符重载与友元函数" class="headerlink" title="运算符重载与友元函数"></a>运算符重载与友元函数</h2><ul>
+<li>为什么在可以使用类成员函数进行运算符重载的情况下，还要使用友元函数进行运算符重载，这是因为可能存在下列情况：A = B*2.75; 那么这个对应的是A = B.operaotr<em>(2.75); 那么反过来呢？A=2.75*B；由于2.75并非对象，那么这种情况就无法成立，在此基础上，所以需要使用友元函数进行运算符重载；针对A=2.75*B就可以和class1 operator\</em>(double m，const class1 &amp;t)进行匹配；对于非成员重载运算符函数来说，运算符表达式左边的操作数对应于运算符函数的第一个参数，运算符表达式右边的操作数对应于运算符函数的第二个参数。  </li>
+<li>友元函数需要注意他的作用域；如果一个友元函数在类中声明，在类外定义，那么这种情况是没有问题的；但是如果一个友元函数在类中定义呢？那么此时友元函数变成了一个内联函数，但是需要注意的是，由于此时其在外部未被声明，那么无论在类内部还是外部都不能被调用；</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">X</span>&#123;</span></span><br><span class="line">  <span class="function"><span class="keyword">friend</span> <span class="keyword">void</span> <span class="title">f</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">  X(f(); ) <span class="comment">//错误：f还没有被声明</span></span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">g</span><span class="params">()</span></span>; </span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">h</span><span class="params">()</span></span>; </span><br><span class="line">&#125;; </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">X::g</span><span class="params">()</span></span>&#123;<span class="keyword">return</span> f(); &#125; <span class="comment">//错误：f还没有被声明</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">()</span></span>; </span><br><span class="line"><span class="keyword">void</span> X:h()&#123;<span class="keyword">return</span> f(); &#125; <span class="comment">//正确，f已经被声明了</span></span><br><span class="line"></span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">## 友元类</span><br><span class="line"></span><br><span class="line">* 友元类可以类比友元函数，一个类的友元类可以访问此类中包括非公有成员在内的所有成员；</span><br><span class="line"></span><br><span class="line">```c++</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Screen</span>&#123;</span></span><br><span class="line">    <span class="keyword">friend</span> <span class="class"><span class="keyword">class</span> <span class="title">Window_mgr</span>;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a href = "https://github.com/KevinSCoder/study/blob/master/C%2B%2B/C%2B%2B_Code/base/src/test_7.cpp">参考代码</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    John Doe
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://yoursite.com/2016/03/12/2020-05-05-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB/" title="自定义类">http://yoursite.com/2016/03/12/2020-05-05-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/c/" rel="tag"># c++</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
         
-        
+
         
 
         
           
-          <div class="collection-title">
-            <h2 class="archive-year" id="archive-year-2016">2016</h2>
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
           </div>
         
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/03/13/2020-05-05-IO%E7%B1%BB/" itemprop="url">
-              
-                <span itemprop="name">IO类</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-13T00:00:00+08:00"
-              content="2016-03-13" >
-          03-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+        </div>
+      
       
 
-        
-        
-        
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/03/11/2020-05-05-%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88/" rel="next" title="函数指针">
+                <i class="fa fa-chevron-left"></i> 函数指针
+              </a>
+            
+          </div>
 
-        
-        
+          <span class="post-nav-divider"></span>
 
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/03/12/2020-05-05-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB/" itemprop="url">
-              
-                <span itemprop="name">自定义类</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-12T00:00:00+08:00"
-              content="2016-03-12" >
-          03-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/13/2020-05-05-IO%E7%B1%BB/" rel="prev" title="IO类">
+                IO类 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/03/11/2020-05-05-%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88/" itemprop="url">
-              
-                <span itemprop="name">函数指针</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-11T00:00:00+08:00"
-              content="2016-03-11" >
-          03-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/03/10/2020-05-05-%E5%85%B3%E4%BA%8E%E6%95%B0%E7%BB%84/" itemprop="url">
-              
-                <span itemprop="name">关于数组</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-10T00:00:00+08:00"
-              content="2016-03-10" >
-          03-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/03/10/%E5%85%B3%E4%BA%8E%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" itemprop="url">
-              
-                <span itemprop="name">设计技巧总结</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-10T00:00:00+08:00"
-              content="2016-03-10" >
-          03-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/03/09/2020-05-05-C++%E4%B8%AD%E5%90%84%E7%A7%8D%E6%A6%82%E5%BF%B5%E5%AF%B9%E6%AF%94/" itemprop="url">
-              
-                <span itemprop="name">C++中各种概念对比</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-09T00:00:00+08:00"
-              content="2016-03-09" >
-          03-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/03/08/2020-05-05-C++%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97/" itemprop="url">
-              
-                <span itemprop="name">C++中的关键字</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-08T00:00:00+08:00"
-              content="2016-03-08" >
-          03-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/03/07/2020-05-05-%E5%87%BD%E6%95%B0%E4%BC%A0%E5%8F%82/" itemprop="url">
-              
-                <span itemprop="name">函数传参</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-07T00:00:00+08:00"
-              content="2016-03-07" >
-          03-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-    </div>
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -640,6 +593,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -662,8 +619,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -744,6 +710,22 @@
 		<!--my custom code end-->
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#默认构造函数"><span class="nav-number">1.</span> <span class="nav-text">默认构造函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#析构函数中的delete"><span class="nav-number">2.</span> <span class="nav-text">析构函数中的delete[ ]</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#赋值函数"><span class="nav-number">3.</span> <span class="nav-text">赋值函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拷贝构造函数"><span class="nav-number">4.</span> <span class="nav-text">拷贝构造函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运算符重载与友元函数"><span class="nav-number">5.</span> <span class="nav-text">运算符重载与友元函数</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -891,6 +873,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
@@ -1081,26 +1067,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   
 
 

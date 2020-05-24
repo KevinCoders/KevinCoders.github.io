@@ -121,7 +121,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="c++," />
 
 
 
@@ -132,13 +132,21 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="IO类的基本内容     从上图可以看出，iostream是读写流^1，fstream读写文件；从上图可以看出，fstream继承于iostream，因此发fstream也是读写流，只不过它的职责更窄，主要针对文件读写； cin是标准输入流对象，cout是标准输出流对象，这里的标准输入，就是指从键盘输入，标准输出，就是指输出到终端，由于c++中继承机制的实现，使我们不用考虑设备类型和字符大小的问题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IO类">
+<meta property="og:url" content="http://yoursite.com/2016/03/13/2020-05-05-IO%E7%B1%BB/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="IO类的基本内容     从上图可以看出，iostream是读写流^1，fstream读写文件；从上图可以看出，fstream继承于iostream，因此发fstream也是读写流，只不过它的职责更窄，主要针对文件读写； cin是标准输入流对象，cout是标准输出流对象，这里的标准输入，就是指从键盘输入，标准输出，就是指输出到终端，由于c++中继承机制的实现，使我们不用考虑设备类型和字符大小的问题">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/KevinSCoder/KevinSCoder.github.io/_posts/resource/1.jpg">
+<meta property="og:image" content="https://github.com/KevinSCoder/study/blob/master/resource/1.jpg">
+<meta property="article:published_time" content="2016-03-12T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-05-23T12:37:14.345Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="c++">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/KevinSCoder/KevinSCoder.github.io/_posts/resource/1.jpg">
 
 
 
@@ -168,13 +176,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/03/13/2020-05-05-IO类/"/>
 
 
 
 
 
-  <title>Archive | Hexo</title>
+  <title>IO类 | Hexo</title>
   
 
 
@@ -202,7 +210,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -306,333 +314,288 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/03/13/2020-05-05-IO%E7%B1%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h2 class="post-title" itemprop="name headline">IO类</h2>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-03-13T00:00:00+08:00">
+                2016-03-13
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2020-05-23T20:37:14+08:00">
+                2020-05-23
+              </time>
+            
+          </span>
+
           
-        
-        Um..! 8 posts in total. Keep on posting.
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/c/" itemprop="url" rel="index">
+                    <span itemprop="name">c++</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2016/03/13/2020-05-05-IO%E7%B1%BB/" class="leancloud_visitors" data-flag-title="IO类">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <h2 id="IO类的基本内容"><a href="#IO类的基本内容" class="headerlink" title="IO类的基本内容"></a>IO类的基本内容</h2><img src="https://github.com/KevinSCoder/KevinSCoder.github.io/_posts/resource/1.jpg">
+
+<img src="https://github.com/KevinSCoder/study/blob/master/resource/1.jpg">
+
+<ul>
+<li>从上图可以看出，iostream是读写流<a href="流是c++中的抽象概念，我们可以认为流就是对象，如果从标准输出输入流中读写数据那么也就意味着从cout、cin中读写数据；">^1</a>，fstream读写文件；从上图可以看出，fstream继承于iostream，因此发fstream也是读写流，只不过它的职责更窄，主要针对文件读写；</li>
+<li>cin是标准输入流对象，cout是标准输出流对象，这里的标准输入，就是指从键盘输入，标准输出，就是指输出到终端，由于c++中继承机制的实现，使我们不用考虑设备类型和字符大小的问题；</li>
+<li>c++的输入与输出包括以下三个部分：<ol>
+<li>对系统制定的标准设备的输入和输出，称为标准I/O（设备）; </li>
+<li>以磁盘文件为对象进行输入和输出，称为文件I/O（文件）; </li>
+<li>对内存中指定的空间进行输入和输出，称为串I/O（内存）; </li>
+</ol>
+</li>
+</ul>
+<h3 id="关于流的条件状态"><a href="#关于流的条件状态" class="headerlink" title="关于流的条件状态"></a>关于流的条件状态</h3><p> &emsp; &emsp; 一个流一旦发生错误，那么其后续的IO操作都会失败，只有一个流处于无错误状态时，我们才可以对其进行读写操作，因此代码应该在使用一个流之前检查它是否处于良好状态，代码如下：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(<span class="built_in">cin</span> &gt;&gt; <span class="keyword">word</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">//ok: 读操作成功,否则 &gt;&gt;返回false</span></span><br></pre></td></tr></table></figure>
+<p>&emsp; &emsp; 上面只是告诉了我们流是否有效，例如一个流失败了，我们不知道为什么失败，关于这一部分，我们可以使用iostate<a href="iostate是一个机器无关类，提供了表达流状态的完整功能；">^2</a>, 也可以使用stream.eof()等函数判断；</p>
+<h3 id="关于缓冲区"><a href="#关于缓冲区" class="headerlink" title="关于缓冲区"></a>关于缓冲区</h3><ul>
+<li>每个输出流都有一个缓冲区，用来保存程序读写的数据，如果我们执行文本打印操作，那么文本可能立即打印，也可能不立即打印，此时文本就被保存到了缓冲区；</li>
+<li>文本缓冲区之所以存在，是因为设备的读写操作可能都很耗时，允许操作系统将多个输出操作合二为一可以带来性能提升；</li>
+<li>如果我们不想使用缓冲，那么就必须进行缓冲刷新，以下方式可以导致刷新：</li>
+</ul>
+<blockquote>
+<ol>
+<li>程序正常结束；</li>
+<li>缓冲区满时；</li>
+<li>使用操作符endl；</li>
+<li>使用flush；</li>
+</ol>
+</blockquote>
+<p>Note：如果程序崩溃，那么输出缓冲区是不会被刷新的，可能存在这样一种情况：我们通过输出调试信息调试程序，但程序正好崩溃，但实际输出可能已经执行，之所以没有打印只是因为没有缓冲区没有被刷新而已；</p>
+<h3 id="文件输入输出"><a href="#文件输入输出" class="headerlink" title="文件输入输出"></a>文件输入输出</h3><p>&emsp; &emsp; ifstream、ofstream都继承自fstream，分别对应标准输入输出流中的cin、cout，cin是以键盘作为作为标准输入，ifstream是以文件作为输入，换句话说，就是读取文件；同理，cout是以终端作为标准输出，ofstream是以文件作为输出，也就是把数据写入文件；</p>
+<h2 id="编写自己的输入输出运算法（14章）"><a href="#编写自己的输入输出运算法（14章）" class="headerlink" title="编写自己的输入输出运算法（14章）"></a>编写自己的输入输出运算法（14章）</h2><h2 id="控制输出格式以及文件的随机访问（17章）"><a href="#控制输出格式以及文件的随机访问（17章）" class="headerlink" title="控制输出格式以及文件的随机访问（17章）"></a>控制输出格式以及文件的随机访问（17章）</h2><p>参考链接：<a href = "https://www.cnblogs.com/tianzeng/p/9038810.html">C++的流</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    John Doe
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://yoursite.com/2016/03/13/2020-05-05-IO%E7%B1%BB/" title="IO类">http://yoursite.com/2016/03/13/2020-05-05-IO%E7%B1%BB/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/c/" rel="tag"># c++</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
         
-        
+
         
 
         
           
-          <div class="collection-title">
-            <h2 class="archive-year" id="archive-year-2016">2016</h2>
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
           </div>
         
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/03/13/2020-05-05-IO%E7%B1%BB/" itemprop="url">
-              
-                <span itemprop="name">IO类</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-13T00:00:00+08:00"
-              content="2016-03-13" >
-          03-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+        </div>
+      
       
 
-        
-        
-        
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/03/12/2020-05-05-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB/" rel="next" title="自定义类">
+                <i class="fa fa-chevron-left"></i> 自定义类
+              </a>
+            
+          </div>
 
-        
-        
+          <span class="post-nav-divider"></span>
 
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/03/12/2020-05-05-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB/" itemprop="url">
-              
-                <span itemprop="name">自定义类</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-12T00:00:00+08:00"
-              content="2016-03-12" >
-          03-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/03/11/2020-05-05-%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88/" itemprop="url">
-              
-                <span itemprop="name">函数指针</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-11T00:00:00+08:00"
-              content="2016-03-11" >
-          03-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/03/10/2020-05-05-%E5%85%B3%E4%BA%8E%E6%95%B0%E7%BB%84/" itemprop="url">
-              
-                <span itemprop="name">关于数组</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-10T00:00:00+08:00"
-              content="2016-03-10" >
-          03-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/03/10/%E5%85%B3%E4%BA%8E%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" itemprop="url">
-              
-                <span itemprop="name">设计技巧总结</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-10T00:00:00+08:00"
-              content="2016-03-10" >
-          03-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/03/09/2020-05-05-C++%E4%B8%AD%E5%90%84%E7%A7%8D%E6%A6%82%E5%BF%B5%E5%AF%B9%E6%AF%94/" itemprop="url">
-              
-                <span itemprop="name">C++中各种概念对比</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-09T00:00:00+08:00"
-              content="2016-03-09" >
-          03-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/03/08/2020-05-05-C++%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97/" itemprop="url">
-              
-                <span itemprop="name">C++中的关键字</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-08T00:00:00+08:00"
-              content="2016-03-08" >
-          03-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/03/07/2020-05-05-%E5%87%BD%E6%95%B0%E4%BC%A0%E5%8F%82/" itemprop="url">
-              
-                <span itemprop="name">函数传参</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-07T00:00:00+08:00"
-              content="2016-03-07" >
-          03-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-    </div>
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -640,6 +603,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -662,8 +629,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -744,6 +720,22 @@
 		<!--my custom code end-->
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#IO类的基本内容"><span class="nav-number">1.</span> <span class="nav-text">IO类的基本内容</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#关于流的条件状态"><span class="nav-number">1.1.</span> <span class="nav-text">关于流的条件状态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于缓冲区"><span class="nav-number">1.2.</span> <span class="nav-text">关于缓冲区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件输入输出"><span class="nav-number">1.3.</span> <span class="nav-text">文件输入输出</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编写自己的输入输出运算法（14章）"><span class="nav-number">2.</span> <span class="nav-text">编写自己的输入输出运算法（14章）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#控制输出格式以及文件的随机访问（17章）"><span class="nav-number">3.</span> <span class="nav-text">控制输出格式以及文件的随机访问（17章）</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -891,6 +883,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
@@ -1081,26 +1077,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   
 
 
